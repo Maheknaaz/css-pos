@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Positions</title>
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(238, 231, 222);
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #362f2f;
+        }
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background:white;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+        }
+        th {
+            background-color: #555;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        } */
+         body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(238, 231, 222);
+            margin: 0;
+            padding: 0;
+         }
+         .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 20px;
+            z-index: 1000;
+         }
+         .sidebar {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100px;
+            height: 100%;
+            background-color: #444;
+            color: white;
+            padding: 10px;
+         }
+         .content {
+            margin-left: 150px;
+            margin-top: 10px;
+            padding: 20px;
+         }
+         .relative-box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #f44336;
+            color: white;
+            text-align: center;
+            margin: 20px;
+         }
+         .absolute-box {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            margin: 20px;
+         }
+         .fixed-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 200px;
+            height: 100px;
+            background-color: #07375f;
+            color: white;
+            text-align: center;
+            margin: 20px;
+         }
+         .z-index-box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #ff9800;
+            color: white;
+            text-align: center;
+            margin: 20px;
+            z-index: 1;
+         }
+         .centered-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 150px;
+            height: 100px;
+            background-color: #9c27b0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            z-index: 1000;
+         }
+ </style>
+</head>
+<body>
+    <!-- <h1>Student Table</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>25</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Tina</td>
+            <td>30</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Alina</td>
+            <td>28</td>
+            <td>India</td>
+        </tr>
+            <tr>
+            <td>Atly</td>
+            <td>21</td>
+            <td>India</td>
+        </tr>
+    </table> -->
+    <!-- Sticky header -->
+     <div class="header">Sticky header</div>
+     <!-- Sidebar -->
+     <div class="sidebar">Fixed Sidebar</div>
+    <!-- Main content -->
+     <div class="content">
+        <h2>Positioning Elements</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum et itaque consequuntur rem. Quaerat suscipit esse nam veniam unde, dolore labore delectus laborum cumque quidem error molestiae, vitae necessitatibus debitis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis quo nostrum adipisci cumque blanditiis doloribus vitae possimus dignissimos tempore, vero sequi magnam saepe ipsam exercitationem voluptates alias eligendi! Explicabo, consequuntur.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo cumque ipsam praesentium quo saepe, architecto blanditiis consequuntur hic culpa in, adipisci iusto cum ipsa cupiditate earum fugiat eveniet, deleniti assumenda.
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt tenetur placeat id est corporis, pariatur ipsam quaerat magnam aliquam alias. Voluptatum dolores distinctio quo voluptate autem fuga repudiandae quae commodi.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro animi mollitia omnis expedita ad similique, voluptatibus labore repudiandae beatae quo sit! Aperiam ullam iusto earum blanditiis reiciendis doloremque? Est, veniam.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur natus cumque rem facilis, officia tempore nesciunt beatae excepturi mollitia eaque a, vel, quod incidunt ex ipsam ducimus. Eligendi, pariatur cum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo placeat deleniti est optio quod quasi illo illum, sunt tenetur. Illo voluptatum incidunt doloremque ad tempore nulla quo. Eos, dolor consequatur?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas provident perspiciatis officiis magni alias corrupti incidunt quod aliquam illo cum ullam voluptas quis dignissimos tempore maiores, similique recusandae reprehenderit accusamus.</p>
+        <!-- Relative position -->
+        <div class="relative-box">Relative position Box.</div>
+        <!-- Absolute position -->
+        <div class="absolute-box">Absolute position Box.</div>
+        <!-- Fixed position -->
+        <div class="fixed-box">Fixed position Box.</div>
+        <!-- Z-index -->
+        <div class="z-index-box">Z-index Box.</div>
+        <!-- Centered popup -->
+        <div class="centered-popup">Centered Popup.</div>
+
+     </div>
+
+
+    
+</body>
+</html>
